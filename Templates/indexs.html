@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Radio checked style</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Prompt:wght@100&display=swap" rel="stylesheet">
+
+  
+
+  
+      <link rel="stylesheet" href="static\css\style.css">
+
+  
+</head>
+
+<body>
+  <h1>Monikra Shipping</h1>
+
+  <form action="/result" method="POST">
+
+
+<div class="box">
+  <h1>ช่องทางการส่ง</h1>
+  <input type="radio" id="radio1" name="Transmission" value="ship"/>
+  <label for="radio1">Ship</label>
+
+  <input type="radio" id="radio2" name="Transmission" value="air"/>
+  <label for="radio2">Air</label>
+</div>
+
+<div class="box">
+  <h1>รีบรรจุภัณฑ์</h1>
+  <input type="radio" id="radio3" name="Repackag" value="re"/>
+  <label for="radio3">Repackag</label>
+
+  <input type="radio" id="radio5" name="Repackag" value="notre"/>
+  <label for="radio5">Un Repackag</label>
+</div>
+
+<div class="box">
+  <h1>น้ำหนัก</h1>
+  <input type="radio" id="radio6" name="Weight" value="5kg"/>
+  <label for="radio6">0.1 - 5 kg</label>
+
+  <input type="radio" id="radio7" name="Weight" value="10kg"/>
+  <label for="radio7">5.1 - 10 kg</label>
+
+  <input type="radio" id="radio8" name="Weight" value="15kg"/>
+  <label for="radio8">10.1 - 15 kg</label>
+
+  <input type="radio" id="radio9" name="Weight" value="20kg"/>
+  <label for="radio9">15.1 - 20 kg</label>
+
+  <input type="radio" id="radio10" name="Weight" value="20kgup"/>
+  <label for="radio10">20 kg up</label>
+</div>
+
+<div class="box">
+  <h1>ติดใบแจ้งราคา</h1>
+  <input type="radio" id="radio11" name="PriceInvoice" value="invoice"/>
+  <label for="radio11">Price Invoice</label>
+
+  <input type="radio" id="radio12" name="PriceInvoice" value="uninvoice"/>
+  <label for="radio12">Un Price Invoice</label>
+</div>
+
+<input type="submit" class="btn btn-success btn-lg float-right"/>
+
+
+</form>
+
+<div class="box">
+  <tr>
+    <h3>Transmission {{Transmission}}</h3>
+  </tr>
+
+  <tr>
+    <h3>Repackag {{Repackag}}</h3>
+  </tr>
+
+  <tr>
+    <h3>Weight {{Weight}}</h3>
+  </tr>
+
+  <tr>
+    <h3>Price Invoice {{PriceInvoice}}</h3>
+  </tr>
+</div>
+
+
+<p>Really nothing special.</p>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+</body>
+</html>
